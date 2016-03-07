@@ -41,17 +41,22 @@ Options:
 
 ## Examples ##
 
-1. [`users:list` v1](https://developers.google.com/admin-sdk/directory/v1/reference/users/list#request)
+### [`users:list` v1](https://developers.google.com/admin-sdk/directory/v1/reference/users/list#request) ###
+
 ```
 $ python gapipy.py admin@example.com users list v1 \
 --scopes-path=scopes.txt --req-params-path=req-params-users.json
 ```
-2. [`about.get` v3](https://developers.google.com/drive/v3/reference/about/get#request)
+
+### [`about.get` v3](https://developers.google.com/drive/v3/reference/about/get#request) ###
+
 ```
 $ python gapipy.py microamp@example.com about get v3 \
 --scopes-path=scopes.txt --req-params-path=req-params-about.json
 ```
-3. [`changes.list` v2](https://developers.google.com/drive/v2/reference/changes/list)
+
+### [`changes.list` v2](https://developers.google.com/drive/v2/reference/changes/list) ###
+
 ```
 $ python gapipy.py microamp@example.com changes list v2 \
 --scopes-path=scopes.txt --req-params-path=req-params-changes.json
