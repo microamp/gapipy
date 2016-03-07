@@ -26,9 +26,11 @@ BASE_URLS = {
 }
 
 
-def _compose(*fns):
-    def func(arg):
-        return reduce(lambda v, fn: fn(v), fns, arg)
+def _compose(fn, *fns):
+    def func(*args, **kwargs):
+        return reduce(lambda v, f: f(v),
+                      fns,
+                      fn(*args, **kwargs))
 
     return func
 
